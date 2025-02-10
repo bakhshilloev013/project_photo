@@ -65,6 +65,14 @@ html {
     padding: 0 var(--container-padding-inline);
 }
 
+.title {
+    color: var(--dark-color);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+}
+
 .promo {
     min-height: 100vh;
     background: url('../img/main_bg.jpg') center center/cover no-repeat;
@@ -151,7 +159,7 @@ html {
 }
 
 .about {
-    padding: 80px 0;
+    padding-top: 80px;
     background: var(--light-color);
 }
 
@@ -202,5 +210,24 @@ html {
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 2%;
+    }
+}
+
+.works {
+    background: var(--light-color);
+    padding-top: 80px;
+}
+
+.works__grid {
+    margin-top: 50px;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template: repeat(2, 1fr) 1.5fr / repeat(2, 1fr);
+    gap: 50px 30px;
+    img {
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
